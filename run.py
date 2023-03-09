@@ -90,8 +90,8 @@ def atur():
 		url = ids.split('/')[5]
 		BOT(url,lah,tex,pilih,tim)
 
-	if 'www' in ids:
-		url = ids.split('/')[6]
+	elif 'story.php' in ids:
+		url = ids.split('/')[3].split('=')[1].replace('&id','')
 		BOT(url,lah,tex,pilih,tim)
 
 	elif 'photo.php' in ids:
